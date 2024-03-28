@@ -90,6 +90,7 @@ export default function RadioButtonGroup<TFieldValues extends FieldValues>({
           {label}
         </FormLabel>
       )}
+      <a href='javascript:alert()'>Link</a>
       <RadioGroup
         onChange={onRadioChange}
         name={name}

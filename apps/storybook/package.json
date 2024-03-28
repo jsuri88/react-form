@@ -1,0 +1,66 @@
+{
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/dohomi/react-hook-form-mui",
+  "homepage": "https://react-hook-form-material-ui.vercel.app",
+  "keywords": [
+    "react",
+    "mui",
+    "material-ui",
+    "react-hook-form"
+  ],
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "name": "rhfm-storybook",
+  "author": "Dominic Garms",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "check-types": "tsc --noemit",
+    "deploy": "yarn run build-storybook && cd storybook-static && vercel --name react-hook-form-material-ui --prod"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form-mui": "*",
+    "vite": "^4.3.9"
+  },
+  "devDependencies": {
+    "@date-io/date-fns": "^2.16.0",
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.14.8",
+    "@mui/material": "^5.14.8",
+    "@mui/x-date-pickers": "^6.13.0",
+    "@storybook/addon-essentials": "latest",
+    "@storybook/nextjs": "latest",
+    "@storybook/react": "latest",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.4",
+    "@typescript-eslint/parser": "^5.30.4",
+    "date-fns": "^2.28.0",
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.27.1",
+    "storybook": "^7.0.12",
+    "typescript": "latest"
+  }
+}

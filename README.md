@@ -1,4 +1,4 @@
-# Material-UI and react-hook-form combined
+# Material-UI and react-hook-form combined - Test
 
 <div align="center">
   <a href="https://react-hook-form-material-ui.vercel.app/" rel="noopener" target="_blank">
